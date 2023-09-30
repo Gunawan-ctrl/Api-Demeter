@@ -16,14 +16,14 @@ const login = async ({ USERNAME, PASSWORD }) => {
   );
   if (user === null) {
     response = { ...requestResponse.unauthorized };
-    response.message = "user tidak ditemukan."
+    response.message = "user tidak ditemukan.";
     return response;
   }
 
   const comparePassword = await bcrypt.compare(PASSWORD, user.PASSWORD);
   if (!comparePassword) {
     response = { ...requestResponse.unauthorized };
-    response.message = "Password anda salah."
+    response.message = "Password anda salah.";
     return response;
   }
   const token = jwt.sign(

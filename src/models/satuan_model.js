@@ -10,31 +10,10 @@ const Schema = new mongoose.Schema(
     GUID: {
       type: String,
     },
-    ID_PEMASOK: {
+    ID_SATUAN: {
       type: String,
     },
     NAMA: {
-      type: String,
-    },
-    EMAIL: {
-      type: String,
-    },
-    TELEPON: {
-      type: String,
-    },
-    ALAMAT: {
-      type: String,
-    },
-    KECAMATAN: {
-      type: String,
-    },
-    KABUPATEN: {
-      type: String,
-    },
-    PROVINSI: {
-      type: String,
-    },
-    PROFIL: {
       type: String,
     },
     CREATED_AT: {
